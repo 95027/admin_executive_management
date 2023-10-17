@@ -33,7 +33,7 @@ class LeadsController extends Controller
 
         // checking for duplicate emails before inserting
         if(Lead::where('email', $email)){
-            return Lead::where('email', $email)->get(); 
+            //return Lead::where('email', $email)->get(); 
         }
             Lead::create([
                 'name' => $name,
